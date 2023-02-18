@@ -1,15 +1,13 @@
-fmt:
+.PHONY: fmt build test run
+
+format:
 	go fmt ./...
-.PHONY:fmt
 
-lint: fmt
-	revive ./...
-.PHONY:lint
-
-vet: fmt
-	go vet ./...
-.PHONY:vet
-
-build: vet
+build:
 	go build ./...
-.PHONY:build
+
+test:
+	go test ./...
+
+run:
+	go run cmd/cli/main.go
