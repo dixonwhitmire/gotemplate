@@ -17,3 +17,6 @@
 # IDEs
 .vscode
 .idea
+
+# build output
+target/
