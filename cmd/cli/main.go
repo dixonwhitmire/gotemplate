@@ -1,3 +1,4 @@
+// package main contains the project's entry-point
 package main
 
 import (
