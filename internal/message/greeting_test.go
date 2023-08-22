@@ -4,6 +4,8 @@ import (
 	"testing"
 )
 
+// TestGreeting provides a working example of a "table", or parameterized, test.
+// In this case the test is simple so our table is a simple map, rather than a struct.
 func TestGreeting(t *testing.T) {
 
 	tests := map[string]string{
